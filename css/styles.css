@@ -1,0 +1,243 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Dosis', sans-serif;
+}
+
+section { 
+	height: 100vh; 
+}
+
+h1 {
+	margin: 0px;
+	padding: 10px;
+	font-size: 60px;
+}
+
+.section1 {
+	background-color: rgb(229,229,229);
+	background-repeat: no-repeat;
+	animation: myfirst 5s;
+	background-position: right center; 
+}
+
+.section2{
+	height: 170vh;
+}
+
+.section-title {
+	font-weight: 700; 
+	text-align: left;
+	padding: 15px;
+}
+
+.phrase {
+	font-weight: 600; 
+	font-size: 60px;
+}
+
+@keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
+  border-color: rgb(224, 224, 224);
+  padding: 0px;
+  height: 90px;
+  position: fixed;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.navbar.navbar-inverse .navbar-header .navbar-brand {
+    display: block;
+    text-align: center;
+    float: none;
+    vertical-align: top;
+ }
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 26px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: rgb(224, 224, 224);
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.color-changed{
+	background-color:white !important;
+	border-color: rgb(224, 224, 224);
+}
+
+#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+}
+
+/* ABOUT ME */
+.container .jumbotron {
+  box-shadow: 0 0 50px white;
+}
+/* END ABOUT ME */
+
+
+
+/** Extra small devices (portrait phones, less than 576px) **/
+@media (max-width: 575.98px) { 
+	/* Home Page */
+	.intro-xs {
+		padding: 0vh;
+		padding-top: 35px;
+		background-position: bottom right;
+		text-align: left;
+		margin: 0;
+		background-size: 70vw;
+	}
+	.title-xs {
+		font-size: 7vw;
+	}
+	/* End Home Page */ 
+
+	/* About Me */
+	.section2{
+		height: 110vh;
+	}
+
+  	.container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+    border-radius: 0px;
+    height: 100vh;
+    background-color: white;
+
+  	}
+  	/* End About Me */
+}
+
+
+/** Small devices (landscape phones, 576px and up) **/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	/* Home Page */
+	.intro-sm {
+		padding: 0vh;
+		padding-top: 50px;
+		padding-left: 10px;
+		background-position: right bottom;
+		text-align: left;
+		margin: 0;
+		background-size: 75vw;
+	}
+	/* End Home Page */
+
+	/* About Me */
+	.section2{
+		height: 135vh;
+	}
+
+  	.container .jumbotron {
+    background-color: white;
+    height: 100vh;
+  	}
+  	/* End About Me */
+
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	/* Home Page */
+	.intro-md {
+		padding: 15vh;
+		background-position: right center;
+	} 
+	/* End Home Page */
+
+	/* About Me */
+	.container .jumbotron {
+    background: url('../images/graduacion.jpeg') no-repeat;
+    height: 100vh;
+  	}
+  	/* End Ambout Me */
+
+}
+
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	/* Home Page */
+	.intro-lg {
+		padding: 25vh;
+		background-position: right center;
+	}
+	/* End Home Page */
+
+	/* About Me */
+	.container .jumbotron {
+    background: url('../images/graduacion.jpeg') no-repeat;
+    height: 100vh;
+    padding: 0;
+  	}
+  	/* End Ambout Me */
+}
+
+/** Extra large devices (large desktops, 1200px and up) **/
+@media (min-width: 1200px) { 
+	/* Home Page */
+	.intro-xl {
+		padding: 25vh;
+		background-position: 75% 100%;
+	}
+	/* End Home Page */
+
+	/* About Me */
+	.container .jumbotron {
+    background: url('../images/graduacion.jpeg') no-repeat;
+    background-position: 75% 50%;
+    height: 100vh;
+  	}
+  	/* End Ambout Me */
+}
+
+
+
+
+.socials {
+  list-style: none;
+}
+.socials li{
+  display: inline;
+  margin: 5px;
+  font-size: 2em;
+}
+
+.fa {
+	color: black;
+}
+
+
+
+
+
+
