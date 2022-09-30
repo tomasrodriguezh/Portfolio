@@ -175,6 +175,11 @@ h1 {
     font-size: 1.2em;
 }
 
+.header {
+	height: 30vh;
+}
+/* END HEADER */
+
 /* ABOUT ME */
 .container .jumbotron {
   box-shadow: 0 0 50px white;

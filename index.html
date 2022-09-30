@@ -22,7 +22,7 @@
 		  <a href="#title-trh"><span></span>Scroll</a>
 		</div>
 	</section>
-	<section class="section2" style="background-color: white;">
+	<section class="header" style="background-color: white;">
 		<a id="title-trh" style="text-decoration: none;"><h1 class="title-xs" style="font-weight: 500; text-align: center; color: black; padding: 15px;">TOMÁS RODRIGUEZ H</h1></a>
 		<header>
 			<nav id="header-nav" class="navbar navbar-default" style="position: relative;">
@@ -42,19 +42,19 @@
         			<div id="collapsable-nav" class="collapse navbar-collapse">
            				<ul id="nav-list" class="nav navbar-nav navbar-right color-changed">
             				<li>
-              					<a href="#about-me">
+              					<a href="#about-me" id="about-me">
                 					<span></span><br class="hidden-xs"> ABOUT ME</a>
             				</li>
             				<li>
-              					<a href="#">
-                					<span></span><br class="hidden-xs">  EXPERIENCE</a>
+              					<a href="#experience-education" id="experience-education">
+                					<span></span><br class="hidden-xs">  EXPERIENCE & EDUCATION</a>
             				</li>
             				<li>
-              					<a href="#portfolio">
+              					<a href="#portfolio" id="portfolio">
                 					<span></span><br class="hidden-xs"> PORTFOLIO</a>
             				</li>
             				<li>
-              					<a href="#">
+              					<a href="#contact" id=contact>
                 					<span></span><br class="hidden-xs"> CONTACT</a>
             				</li>
           				</ul><!-- #nav-list -->
@@ -62,30 +62,15 @@
       			</div>
     		</nav>
 		</header>
-		<a id="about-me" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: red;"> ABOUT ME</h1></a>
-		<div id= "main-content" class="container">
-			<div class="jumbotron">
-				<img src="images/graduacion.jpeg" alt="Masters Graduation" class="img-responsive visible-xs">
-			</div>
-		</div>
 	</section>
 
-	<section style="background-color: white;">
-		<div>
-			<h2 class = "title-xs phrase" style="font-weight: 600"> Here will go a very motivational phrase</h2>
-		</div>
-	</section>
-
-	<section class="portfolio" style="background-color: black;">
-		<a id="portfolio" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: rgb(229,229,229);"> PORTFOLIO</h1></a>
-
-	</section>
+	<div id="main-content"></div>
 
 	<footer class="panel-footer">
     	<div class="container">
     		<div class="text-center">
     			<ul class="socials">
-    				<li><a href="https://www.kaggle.com/tomasrodriguezh"><i class="fa fa-github"></i></a></li>
+    				<li><a href="https://github.com/tomasrodriguezh"><i class="fa fa-github"></i></a></li>
     				<li><a href="https://www.linkedin.com/in/tomasrodriguezh/"><i class="fa fa-linkedin"></a></i></li>
     				<li><a href="/"><i class="fa fa-codepen"></a></i></li>
     				<li><a href="mailto:trodriguezh@alumni.unav.es"><i class="fa fa-at"></i></a></li>
@@ -98,6 +83,7 @@
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/ajax-utils.js"></script>
   	<script src="js/script.js"></script>
 </body>
 </html>
