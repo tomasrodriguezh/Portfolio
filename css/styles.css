@@ -21,6 +21,63 @@ h1 {
 	background-position: right center; 
 }
 
+/* Scroll */
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: black;
+  font : normal 700 20px/1 'Dosis', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  animation: appear 0s 6s forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  to   { opacity: 1; }
+}
+
+.demo a:hover {
+  opacity: .5;
+}
+
+#scroll a {
+  padding-top: 70px;
+}
+#scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+/* End Scroll */
+
 .section2{
 	height: 170vh;
 }
@@ -140,6 +197,9 @@ h1 {
 	.title-xs {
 		font-size: 9vw;
 	}
+	.scroll-xs a {
+  left: 10%;
+	}
 	/* End Home Page */ 
 
 	/* About Me */
@@ -174,6 +234,9 @@ h1 {
 	.title-s {
 		font-size: 8vw;
 	}
+	.scroll-s a {
+  left: 10%;
+	}
 	/* End Home Page */
 
 	/* About Me */
@@ -196,6 +259,9 @@ h1 {
 		padding: 15vh;
 		background-position: right center;
 	} 
+	.scroll-md a {
+  left: 10%;
+	}
 	/* End Home Page */
 
 	/* About Me */
@@ -214,6 +280,7 @@ h1 {
 	.intro-lg {
 		padding: 25vh;
 		background-position: right center;
+		position: relative;
 	}
 	/* End Home Page */
 
