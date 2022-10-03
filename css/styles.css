@@ -4,6 +4,10 @@ body {
   font-family: 'Dosis', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 section { 
 	height: 100vh; 
 }
@@ -79,7 +83,7 @@ h1 {
 /* End Scroll */
 
 .section2{
-	height: 170vh;
+	height: 250vh;
 }
 
 .big-heading {
@@ -112,7 +116,26 @@ h1 {
 .phrase {
 	font-weight: 600; 
 	font-size: 60px;
+	position: relative;
+	padding: 20px;
+	padding-top: 45vh;
 }
+
+.div-phrase, .div-paragraph {
+	display: flex;
+  justify-content: center; /* Centering Horizantly */
+  align-items: center;
+}
+
+.paragraph {
+	font-weight: 400; 
+	font-size: 30px;
+	position: relative;
+	padding: 50px;
+	padding-top: 40vh;
+}
+
+
 
 @keyframes myfirst {
     from {opacity: 0.5;}
@@ -187,6 +210,19 @@ h1 {
 /* END ABOUT ME */
 
 
+/* EDUCATION */
+
+.section3 {
+	height: 150vh;
+}
+
+.carousel{
+  position:relative;
+	top:300px;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+/* END EDUCATION */
 
 /** Extra small devices (portrait phones, less than 576px) **/
 @media (max-width: 575.98px) { 
@@ -209,18 +245,38 @@ h1 {
 
 	/* About Me */
 	.section2{
-		height: 110vh;
+		height: 180vh;
 	}
 
   	.container .jumbotron {
     margin-top: 30px;
     padding: 0;
     border-radius: 0px;
-    height: 100vh;
+    height: 90%;
     background-color: white;
+    margin-bottom: 0;
 
   	}
+  	.paragraph, .phrase{
+  		padding-top: 10vh;
+  	}
   	/* End About Me */
+
+  /* Carousel */
+  .carousel-item__image-xs {
+    width: 40%;
+    flex-basis: 40%;
+    -webkit-flex-basis: 40%;
+	}
+	.content__left-xs {
+		padding: 7px;
+		flex-basis: 80%;
+
+	}
+	.content__right-xs {
+		background-position:;
+	}
+	/* END Carousel */
 }
 
 
@@ -246,14 +302,33 @@ h1 {
 
 	/* About Me */
 	.section2{
-		height: 135vh;
+		height: 190vh;
 	}
 
   	.container .jumbotron {
     background-color: white;
-    height: 100vh;
+    height: 90%;
+  	}
+
+  	.paragraph, .phrase{
+  		padding-top: 10vh;
   	}
   	/* End About Me */
+
+	  /* Carousel */
+  .carousel-item__image-xs {
+    width: 40%;
+    flex-basis: 40%;
+    -webkit-flex-basis: 40%;
+	}
+	.content__left-xs {
+		padding: 7px;
+		flex-basis: 80%;
+
+	}
+	/* END Carousel */
+
+
 
 }
 
@@ -331,8 +406,6 @@ h1 {
 .fa {
 	color: black;
 }
-
-
 
 
 

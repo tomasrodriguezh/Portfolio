@@ -5,10 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tomás Rodríguez H</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/carousel.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Merriweather:300:italic" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -42,19 +46,19 @@
         			<div id="collapsable-nav" class="collapse navbar-collapse">
            				<ul id="nav-list" class="nav navbar-nav navbar-right color-changed">
             				<li>
-              					<a href="#about-me" id="about-me">
+              					<a href="#about-me">
                 					<span></span><br class="hidden-xs"> ABOUT ME</a>
             				</li>
             				<li>
-              					<a href="#experience-education" id="experience-education">
+              					<a href="#experience-education">
                 					<span></span><br class="hidden-xs">  EXPERIENCE & EDUCATION</a>
             				</li>
             				<li>
-              					<a href="#portfolio" id="portfolio">
+              					<a href="#portfolio">
                 					<span></span><br class="hidden-xs"> PORTFOLIO</a>
             				</li>
             				<li>
-              					<a href="#contact" id=contact>
+              					<a href="#contact">
                 					<span></span><br class="hidden-xs"> CONTACT</a>
             				</li>
           				</ul><!-- #nav-list -->
@@ -64,7 +68,102 @@
 		</header>
 	</section>
 
-	<div id="main-content"></div>
+	<section class="section2" style="background-color: white;">
+		<a id="about-me" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: red;"> ABOUT ME</h1></a>
+		<div class="container">
+			<div class="jumbotron image-reveal">
+				<img src="images/graduacion.jpeg" alt="Masters Graduation" class="img-responsive visible-xs">
+			</div>
+		</div>
+		<div class="div-phrase">
+			<h2 class = "title-xs phrase" style="font-weight: 600"> I analyze data to obtain meaningful insights.</h2>
+		</div>
+		<div class="div-paragraph">
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</section>
+
+	<section class="section3" style="background-color: #eaeaea">
+		<a id="experience-education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> EXPERIENCE</h1></a>
+
+		<a id="education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> EDUCATION</h1></a>
+		<div class="carousel">
+		  <div class="carousel__nav">
+		   <span id="moveLeft" class="carousel__arrow">
+		        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+		    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+		</svg>
+		    </span>
+		    <span id="moveRight" class="carousel__arrow" >
+		      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+		  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+		</svg>    
+		    </span>
+		  </div>
+		  <div class="carousel-item carousel-item--1" style="background-color: rgb(41, 50, 59);">
+		    <div class="carousel-item__image carousel-item__image-s carousel-item__image-xs content__right content__right-xs" style="background-position: left;"><h1>MADRID<br><span>SPAIN</span></h1></div>
+		    <div class="carousel-item__info content__left-xs">
+		      <div class="carousel-item__container">
+		      <h1>Universidad de Navarra</h1>
+		      <h2>M.Sc. in Big Data Science</h2>
+		      <h3>School of Engineering | 2021&nbsp-&nbsp2022</h3>
+		      <ul>
+		        <li>Master's sub-delegate</li>
+		      </ul>
+		        </div>
+		    </div>
+		  </div>
+		  <div class="carousel-item carousel-item--2" style="background-color: rgb(30, 47, 72)";>
+		    <div class="carousel-item__image carousel-item__image-s carousel-item__image-xs content__right" style="background-position: left;"><h1>SANTIAGO<br><span>CHILE</span></h1></div>
+		    <div class="carousel-item__info content__left-xs">
+		      <div class="carousel-item__container">
+		      <h1>Pontificia Universidad Católica de Chile</h1>
+		      <h2>Commercial Engineering, professional degree in Economics</h2>
+		      <h3>Faculty of Economics & Business Administration | 2015&nbsp-&nbsp2020</h3>
+		      <ul>
+		        <li>Graduated with a vote of distinction</li>
+		        <li>Minor in Public Policies</li>
+		        <li>Teaching Assistant in the courses: 
+		            <ol>
+		              <li>International Macroeconomics</li>
+		              <li>Microeconomics I</li>
+		            </ol>
+		        </li>
+		      </ul>
+		      
+		        </div>
+		    </div>
+		  </div>
+		    <div class="carousel-item carousel-item--3" style="background-color: rgb(42, 37, 50);">
+		    <div class="carousel-item__image carousel-item__image-s carousel-item__image-xs content__right"><h1>BERLIN<br><span>GERMANY</span></h1></div>
+		    <div class="carousel-item__info content__left-xs">
+		      <div class="carousel-item__container">
+		      <h1>Technische Universität Berlin</h1>
+		      <h2>Exchange Semester</h2>
+		      <h3>Faculty of Economics and Management | Sept.&nbsp2019&nbsp-&nbspMarch&nbsp2020</h3>
+		      <ul>
+		        <li>Student part of the Academic Mobility Program from P.U.C.</li>
+		      </ul>
+		        </div>
+		    </div>
+		  </div>
+		  
+		   <div class="carousel-item carousel-item--4" style="background-color: rgb(69, 73, 88);">
+		    <div class="carousel-item__image carousel-item__image-s carousel-item__image-xs content__right"><h1>OTHER<br><span></span></h1></div>
+		    <div class="carousel-item__info content__left-xs">
+		      <div class="carousel-item__container">
+		        <ul>
+		          <li><h3>"Data Scientist with R" skills certification at DataCamp</h3></li>
+		          <li><h3>Academic Exchange Student at Orewa College and Unique New Zealand, New Zealand 2013-14</h3></li>
+		          </ul>
+		        </div>
+		    </div>
+		  </div>
+		  
+		</div>
+	</section>
 
 	<footer class="panel-footer">
     	<div class="container">
@@ -83,7 +182,24 @@
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
-  	<script src="js/ajax-utils.js"></script>
+  	<script src="js/carousel.js"></script>
+  	<script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title, .header', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.image-reveal, .carousel', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.phrase, .paragraph', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
   	<script src="js/script.js"></script>
 </body>
 </html>
