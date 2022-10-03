@@ -260,6 +260,10 @@ h1 {
   	.paragraph, .phrase{
   		padding-top: 10vh;
   	}
+
+  	.paragraph {
+  		font-size: 20px;;
+  	}
   	/* End About Me */
 
   /* Carousel */

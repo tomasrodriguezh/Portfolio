@@ -182,6 +182,7 @@
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/ajax-utils.js"></script>
   	<script src="js/carousel.js"></script>
   	<script>
       //common reveal options to create reveal animations
@@ -194,7 +195,7 @@
 
       //target elements, and specify options to create reveal animations
       ScrollReveal().reveal('.main-title, .section-title, .header', { delay: 500, origin: 'left' });
-      ScrollReveal().reveal('.image-reveal, .carousel', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.image-reveal, ', { delay: 600, origin: 'bottom' });
       ScrollReveal().reveal('.phrase, .paragraph', { delay: 700, origin: 'right' });
       ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
       ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
