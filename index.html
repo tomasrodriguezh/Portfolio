@@ -66,10 +66,49 @@
       			</div>
     		</nav>
 		</header>
+		<header id="hid-header-nav" class= "hidden">
+			<nav id="header-nav" class="navbar navbar-default" style="position: relative;">
+      			<div class="container" style="height: 50px;">
+      				<div class="navbar-header">
+      					<!-- Si es que se quiere agregar titulo al navbar
+      					<div class="navbar-brand">
+            				<a href="index.html"><h1 style="font-family: 'Arapey', serif; color: black;"></h1></a>
+            			</div> -->
+      					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+           				<span class="icon-bar"></span>
+          				</button>
+        			</div>
+        			<div id="collapsable-nav" class="collapse navbar-collapse">
+           				<ul id="nav-list" class="nav navbar-nav navbar-right color-changed">
+            				<li>
+              					<a href="#about-me">
+                					<span></span><br class="hidden-xs"> ABOUT ME</a>
+            				</li>
+            				<li>
+              					<a href="#experience-education">
+                					<span></span><br class="hidden-xs">  EXPERIENCE & EDUCATION</a>
+            				</li>
+            				<li>
+              					<a href="#portfolio">
+                					<span></span><br class="hidden-xs"> PORTFOLIO</a>
+            				</li>
+            				<li>
+              					<a href="#contact">
+                					<span></span><br class="hidden-xs"> CONTACT</a>
+            				</li>
+          				</ul><!-- #nav-list -->
+        			</div><!-- .collapse .navbar-collapse -->
+      			</div>
+    		</nav>
+		</header>
 	</section>
 
+
 	<section class="section2" style="background-color: white;">
-		<a id="about-me" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: red;"> ABOUT ME</h1></a>
+		<a id="about-me" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: red;"> &lt;ABOUT ME&gt;</h1></a>
 		<div class="container">
 			<div class="jumbotron image-reveal">
 				<img src="images/graduacion.jpeg" alt="Masters Graduation" class="img-responsive visible-xs">
@@ -85,10 +124,14 @@
 		</div>
 	</section>
 
-	<section class="section3" style="background-color: #eaeaea">
-		<a id="experience-education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> EXPERIENCE</h1></a>
 
-		<a id="education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> EDUCATION</h1></a>
+	<section class="section3" style="background-color: #eaeaea">
+		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="70" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+        	<path stroke="white" fill="white" d="M0 0 L50 100 L100 0 Z"></path>
+    	</svg>
+		<a id="experience-education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> &lt;EXPERIENCE&gt;</h1></a>
+
+		<a id="education" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: black;"> &lt;EDUCATION&gt;</h1></a>
 		<div class="carousel">
 		  <div class="carousel__nav">
 		   <span id="moveLeft" class="carousel__arrow">
@@ -164,6 +207,14 @@
 		  
 		</div>
 	</section>
+	<section class="section4" style="background-color: white;">
+		<a id="portfolio" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: red;"> &lt;PORTFOLIO&gt;</h1></a>
+		
+	</section>
+
+	<section class="section5" style="background-color: black;">
+		<a id="contact" style="text-decoration: none;"><h1 class="title-xs section-title" style="color: white;"> &lt;CONTACT&gt;</h1></a>
+	</section>
 
 	<footer class="panel-footer">
     	<div class="container">
@@ -178,7 +229,6 @@
       		<div class="text-center">Tomás Rodríguez Hermosilla &copy; 2022</div>
     	</div>
   	</footer>
-
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   	<script src="js/jquery-2.1.4.min.js"></script>
   	<script src="js/bootstrap.min.js"></script>
@@ -194,9 +244,9 @@
       });
 
       //target elements, and specify options to create reveal animations
-      ScrollReveal().reveal('.main-title, .section-title, .header', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.main-title', { delay: 500, origin: 'left' });
       ScrollReveal().reveal('.image-reveal, ', { delay: 600, origin: 'bottom' });
-      ScrollReveal().reveal('.phrase, .paragraph', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.phrase, .paragraph', { delay: 500, origin: 'right' });
       ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
       ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
       ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });

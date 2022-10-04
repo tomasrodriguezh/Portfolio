@@ -411,6 +411,7 @@ h1 {
 	color: black;
 }
 
-
-
+.hidden{
+	visibility: hidden;
+}
 

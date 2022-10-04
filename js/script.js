@@ -46,3 +46,19 @@ $(function() {
   });
 });
 
+
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   var navpos = $('#header-nav').offset();
+   if (st < lastScrollTop && $(window).scrollTop() > navpos.top ){
+       $('#hid-header-nav').removeClass('hidden');
+       $('#hid-header-nav').addClass('navbar-fixed-top');
+      
+   } else {
+      // downscroll code
+      $('#hid-header-nav').addClass('hidden');
+      $('#hid-header-nav').removeClass('navbar-fixed-top');
+   }
+   lastScrollTop = st;
+});
