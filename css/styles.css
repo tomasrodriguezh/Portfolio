@@ -111,6 +111,7 @@ h1 {
 	font-weight: 700; 
 	text-align: left;
 	padding: 15px;
+	padding-top: 25px;
 }
 
 .phrase {
@@ -118,7 +119,7 @@ h1 {
 	font-size: 60px;
 	position: relative;
 	padding: 20px;
-	padding-top: 45vh;
+	padding-top: 20vh;
 }
 
 .div-phrase, .div-paragraph {
@@ -132,7 +133,7 @@ h1 {
 	font-size: 30px;
 	position: relative;
 	padding: 50px;
-	padding-top: 40vh;
+	padding-top: 20vh;
 }
 
 
@@ -224,6 +225,230 @@ h1 {
 }
 /* END EDUCATION */
 
+/* CONTACT */
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 50px;
+  position: relative;
+  max-width: 900px;
+}
+
+.contact-left p{
+	/*float: left;*/
+  font-weight: 400;
+  line-height: 170%;
+  color: rgb(229,229,229);
+  font-size: 20px;
+  max-width: 420px;
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+  color: rgb(229,229,229);
+}
+
+.contact-list .list-item a{
+	text-decoration: none;
+	color: rgb(229,229,229);
+}
+
+.list-item {
+	line-height: 4;
+	text-decoration: none;
+	color: rgb(229,229,229);
+}
+
+.contact-text {
+  font: 300 18px 'Dosis', sans-serif;
+  letter-spacing: 1.9px;
+  color: rgb(229,229,229);
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: rgb(229,229,229);
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: white;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 280px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+  text-align: center;
+}
+
+.social-media-list a{
+  text-decoration:none;
+}
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: white; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: rgb(229,229,229);
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+#wrap {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 53px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: black;
+    border: 2px solid rgb(229,229,229);
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn-slide2:hover {
+    background-color: rgb(229,229,229);
+    border: 2px solid rgb(229,229,229);
+}
+
+.btn-slide2:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: black;
+    color: rgb(229,229,229);
+}
+
+.btn-slide2:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+    color: black;
+}
+
+.btn-slide2 span.circle2 {
+    display: block;
+    background-color: rgb(229,229,229);
+    color: black;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: .5s;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    color: rgb(229,229,229);
+    left: 70px;
+  }
+
+.btn-slide2 span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+
+.section5 {
+	height: 105vh;
+}
+/* END CONTACT */
+
+
 /** Extra small devices (portrait phones, less than 576px) **/
 @media (max-width: 575.98px) { 
 	/* Home Page */
@@ -281,6 +506,17 @@ h1 {
 		background-position:;
 	}
 	/* END Carousel */
+
+		/* CONTACT */
+	.contact-wrapper{
+		flex-direction: column;
+		flex:  100%;
+		max-width: 90%;
+	}
+	.section5 {
+		height: 150vh;
+	}
+
 }
 
 
@@ -332,7 +568,15 @@ h1 {
 	}
 	/* END Carousel */
 
-
+	/* CONTACT */
+	.contact-wrapper{
+		flex-direction: column;
+		flex:  100%;
+		max-width: 80%;
+	}
+	.section5 {
+		height: 150vh;
+	}
 
 }
 
@@ -407,7 +651,7 @@ h1 {
   font-size: 2em;
 }
 
-.fa {
+.socials li .fa {
 	color: black;
 }
 
