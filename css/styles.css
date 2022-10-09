@@ -153,6 +153,10 @@ h1 {
   position: fixed;
 }
 
+.navbar {
+	margin-bottom: 0px;
+}
+
 .navbar-brand {
   padding-top: 25px;
   text-align: center;
@@ -210,11 +214,40 @@ h1 {
 }
 /* END ABOUT ME */
 
+/* EXPERIENCE */
+
+.title-font {
+	font-size: 36px;
+	padding-left: 0;
+	line-height: 120%;
+}
+
+.leading-relaxed {
+	font-size: 18px;
+	text-align: left; 
+}
+
+.large-size {
+	font-size: 24px;
+}
+
+.text-box{
+  z-index: 222;
+  background: rgba(41, 41, 55, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  padding-top: 10;
+  padding-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* END EXPERIENCE */
 
 /* EDUCATION */
 
 .section3 {
-	height: 150vh;
+	height: 355vh;
 }
 
 .carousel{
@@ -223,76 +256,13 @@ h1 {
 	left:50%;
 	transform:translate(-50%,-50%);
 }
+
+.carousel-item {
+	border-radius: 10px;
+}
 /* END EDUCATION */
 
 /* CONTACT */
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  padding-top: 50px;
-  position: relative;
-  max-width: 900px;
-}
-
-.contact-left p{
-	/*float: left;*/
-  font-weight: 400;
-  line-height: 170%;
-  color: rgb(229,229,229);
-  font-size: 20px;
-  max-width: 420px;
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-  color: rgb(229,229,229);
-}
-
-.contact-list .list-item a{
-	text-decoration: none;
-	color: rgb(229,229,229);
-}
-
-.list-item {
-	line-height: 4;
-	text-decoration: none;
-	color: rgb(229,229,229);
-}
-
-.contact-text {
-  font: 300 18px 'Dosis', sans-serif;
-  letter-spacing: 1.9px;
-  color: rgb(229,229,229);
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: rgb(229,229,229);
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: white;
-  text-decoration: none;
-}
 
 /* Social Media Icons */
 .social-media-list {
@@ -371,22 +341,22 @@ hr {
     line-height: 50px;
     padding: 0;
     border-radius: 50px;
-    background: black;
-    border: 2px solid rgb(229,229,229);
+    background: rgb(214,216,219);
+    border: 2px solid rgb(10,13,22);
     margin: 10px;
     transition: .5s;
 }
 
 .btn-slide2:hover {
-    background-color: rgb(229,229,229);
-    border: 2px solid rgb(229,229,229);
+    background-color: rgb(10,13,22);
+    border: 2px solid rgb(10,13,22);
 }
 
 .btn-slide2:hover span.circle2 {
     left: 100%;
     margin-left: -45px;
-    background-color: black;
-    color: rgb(229,229,229);
+    background-color: rgb(214,216,219);
+    color: rgb(10,13,22);
 }
 
 .btn-slide2:hover span.title2 {
@@ -397,13 +367,13 @@ hr {
 .btn-slide2:hover span.title-hover2 {
     opacity: 1;
     left: 40px;
-    color: black;
+    color: rgb(214,216,219);
 }
 
 .btn-slide2 span.circle2 {
     display: block;
-    background-color: rgb(229,229,229);
-    color: black;
+    background-color: rgb(10,13,22);
+    color: rgb(214,216,219);
     position: absolute;
     float: left;
     margin: 5px;
@@ -424,13 +394,13 @@ hr {
     margin: 0 auto;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: rgb(214,216,219);
     transition: .5s;
 }
 
 .btn-slide2 span.title2,
   .btn-slide2 span.title-hover2 {
-    color: rgb(229,229,229);
+    color: rgb(10,13,22);
     left: 70px;
   }
 
@@ -440,11 +410,11 @@ hr {
 }
 
 .btn-slide2 span.title-hover2 {
-    color: #fff;
+    color: rgb(214,216,219);
 }
 
 .section5 {
-	height: 105vh;
+	height: 115vh;
 }
 /* END CONTACT */
 
@@ -491,6 +461,12 @@ hr {
   	}
   	/* End About Me */
 
+  /* EXPERIENCE & EDUCATION */
+
+  .section3 {
+  	height: 480vh;
+  }
+
   /* Carousel */
   .carousel-item__image-xs {
     width: 40%;
@@ -506,13 +482,9 @@ hr {
 		background-position:;
 	}
 	/* END Carousel */
+	/* END EXPERIENCE & EDUCATION */
 
 		/* CONTACT */
-	.contact-wrapper{
-		flex-direction: column;
-		flex:  100%;
-		max-width: 90%;
-	}
 	.section5 {
 		height: 150vh;
 	}
@@ -555,6 +527,11 @@ hr {
   	}
   	/* End About Me */
 
+  /* EXPERIENCE & EDUCATION */
+
+  .section3 {
+  	height: 470vh;
+  }
 	  /* Carousel */
   .carousel-item__image-xs {
     width: 40%;
@@ -567,13 +544,9 @@ hr {
 
 	}
 	/* END Carousel */
+	/* END EXPERIENCE & EDUCATION */
 
 	/* CONTACT */
-	.contact-wrapper{
-		flex-direction: column;
-		flex:  100%;
-		max-width: 80%;
-	}
 	.section5 {
 		height: 150vh;
 	}
@@ -597,8 +570,17 @@ hr {
     background: url('../images/graduacion.jpeg') no-repeat;
     height: 100vh;
   	}
-  	/* End Ambout Me */
+  	/* End About Me */
 
+  /* EXPERIENCE & EDUCATION */
+
+  .section3 {
+  	height: 460vh;
+  }
+	/* END EXPERIENCE & EDUCATION */
+	#scroll-top {
+		visibility: hidden;
+	}
 }
 
 
@@ -618,7 +600,16 @@ hr {
     height: 100vh;
     padding: 0;
   	}
-  	/* End Ambout Me */
+  	/* End About Me */
+  /* EXPERIENCE & EDUCATION */
+
+  .section3 {
+  	height: 370vh;
+  }
+	/* END EXPERIENCE & EDUCATION */
+	#scroll-top {
+		visibility: hidden;
+	}
 }
 
 /** Extra large devices (large desktops, 1200px and up) **/
@@ -636,7 +627,11 @@ hr {
     background-position: 75% 50%;
     height: 100vh;
   	}
-  	/* End Ambout Me */
+  	/* End About Me */
+
+  #scroll-top {
+		visibility: hidden;
+	}
 }
 
 
@@ -658,4 +653,3 @@ hr {
 .hidden{
 	visibility: hidden;
 }
-
