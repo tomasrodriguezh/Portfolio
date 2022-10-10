@@ -114,20 +114,13 @@ h1 {
 	position: relative;
 	padding: 20px;
 	padding-top: 20vh;
+	padding-bottom: 20vh;
 }
 
-.div-phrase, .div-paragraph {
+.div-phrase {
 	display: flex;
   justify-content: center; /* Centering Horizantly */
   align-items: center;
-}
-
-.paragraph {
-	font-weight: 400; 
-	font-size: 30px;
-	position: relative;
-	padding: 50px;
-	padding-top: 20vh;
 }
 
 
@@ -242,7 +235,7 @@ h1 {
 
 
 .carousel{
-	height: 100vh;
+	height: 120vh;
   position:relative;
 	top:300px;
 	left:50%;
@@ -251,6 +244,10 @@ h1 {
 
 .carousel-item {
 	border-radius: 10px;
+}
+
+.carousel-item__container h1 {
+	font-size: 36px;
 }
 /* END EDUCATION */
 
