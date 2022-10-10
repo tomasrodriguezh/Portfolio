@@ -8,9 +8,6 @@ html{
   scroll-behavior: smooth;
 }
 
-section { 
-	height: 100vh; 
-}
 
 h1 {
 	margin: 0px;
@@ -19,6 +16,7 @@ h1 {
 }
 
 .section1 {
+	height: 100vh; 
 	background-color: rgb(229,229,229);
 	background-repeat: no-repeat;
 	animation: myfirst 5s;
@@ -81,10 +79,6 @@ h1 {
   }
 }
 /* End Scroll */
-
-.section2{
-	height: 250vh;
-}
 
 .big-heading {
 	font-weight: 700;
@@ -246,11 +240,9 @@ h1 {
 
 /* EDUCATION */
 
-.section3 {
-	height: 355vh;
-}
 
 .carousel{
+	height: 100vh;
   position:relative;
 	top:300px;
 	left:50%;
@@ -261,6 +253,10 @@ h1 {
 	border-radius: 10px;
 }
 /* END EDUCATION */
+
+/* PORTFOLIO */
+
+/* END PORTFOLIO */
 
 /* CONTACT */
 
@@ -413,9 +409,6 @@ hr {
     color: rgb(214,216,219);
 }
 
-.section5 {
-	height: 115vh;
-}
 /* END CONTACT */
 
 
@@ -439,9 +432,6 @@ hr {
 	/* End Home Page */ 
 
 	/* About Me */
-	.section2{
-		height: 180vh;
-	}
 
   	.container .jumbotron {
     margin-top: 30px;
@@ -463,9 +453,6 @@ hr {
 
   /* EXPERIENCE & EDUCATION */
 
-  .section3 {
-  	height: 480vh;
-  }
 
   /* Carousel */
   .carousel-item__image-xs {
@@ -485,9 +472,6 @@ hr {
 	/* END EXPERIENCE & EDUCATION */
 
 		/* CONTACT */
-	.section5 {
-		height: 150vh;
-	}
 
 }
 
@@ -513,9 +497,6 @@ hr {
 	/* End Home Page */
 
 	/* About Me */
-	.section2{
-		height: 190vh;
-	}
 
   	.container .jumbotron {
     background-color: white;
@@ -529,9 +510,6 @@ hr {
 
   /* EXPERIENCE & EDUCATION */
 
-  .section3 {
-  	height: 470vh;
-  }
 	  /* Carousel */
   .carousel-item__image-xs {
     width: 40%;
@@ -547,9 +525,6 @@ hr {
 	/* END EXPERIENCE & EDUCATION */
 
 	/* CONTACT */
-	.section5 {
-		height: 150vh;
-	}
 
 }
 
@@ -574,9 +549,6 @@ hr {
 
   /* EXPERIENCE & EDUCATION */
 
-  .section3 {
-  	height: 460vh;
-  }
 	/* END EXPERIENCE & EDUCATION */
 	#scroll-top {
 		visibility: hidden;
@@ -603,9 +575,6 @@ hr {
   	/* End About Me */
   /* EXPERIENCE & EDUCATION */
 
-  .section3 {
-  	height: 370vh;
-  }
 	/* END EXPERIENCE & EDUCATION */
 	#scroll-top {
 		visibility: hidden;
