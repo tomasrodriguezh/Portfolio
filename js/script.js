@@ -63,6 +63,3 @@ $(window).scroll(function(event){
    lastScrollTop = st;
 });
 
-var encEmail = "dHJvZHJpZ3VlemhAYWx1bW5pLnVuYXYuZXM=";
-const form = document.getElementById("email");
-form.setAttribute("href", "mailto:".concat(atob(encEmail)));
