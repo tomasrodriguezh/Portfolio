@@ -406,6 +406,10 @@ hr {
     color: rgb(214,216,219);
 }
 
+span.blockspam {
+  display: none;
+}
+
 /* END CONTACT */
 
 
